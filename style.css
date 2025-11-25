@@ -1,0 +1,40 @@
+body{
+    background-color: #fff0f5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 50%;
+    height: 100vh;
+}
+.text-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333;
+    transition: transform 0.30s,font-size 0.90;
+    animation: pulse 2s infinite alternate, tilt 4s infinite ease-in-out;
+}
+.text-block:hover{
+    transform: scale(1.2);
+    font-size: 28px;
+    color: #f9b4fc;
+}
+@keyframes pulse{
+    from{ opacity: 0.7;}
+    to{opacity: 1;}
+}
+@keyframes tilt{
+    0%{transform:translateY(0deg)}
+    50%{transform:translateY(2deg)}
+    100%{transform:translateY(-2deg)}
+}
+.flowers{
+    margin-top: 40px;
+    font-size: 40px;
+    animation: float 3s infinite ease-in-out;
+}
+@keyframes tilt{
+    0%{transform:translateY(0)}
+    50%{transform:translateY(-10px)}
+    100%{transform:translateY(0)}
+}
